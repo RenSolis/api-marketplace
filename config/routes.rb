@@ -6,6 +6,8 @@ Rails.application.routes.draw do
       resources :tokens, only: :create
 
       resources :products
+
+      resources :orders, only: %i[index show create]
     end
   end
 end
